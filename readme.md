@@ -1,6 +1,6 @@
 # 📚 FastAPI Bookstore API
 
-A production-ready RESTful API for managing a bookstore, built with **FastAPI**, **MongoDB**, and **Pydantic**. Supports full CRUD operations, filtering, search, and pagination.
+RESTful API for managing a bookstore, built with **FastAPI**, **MongoDB**, and **Pydantic**. Supports full CRUD operations.
 
 ---
 
@@ -9,7 +9,6 @@ A production-ready RESTful API for managing a bookstore, built with **FastAPI**,
 - ✅ Create, Read, Update, Delete (CRUD) books
 - ✅ MongoDB integration with `motor` (async)
 - ✅ Pydantic validation
-- ✅ Pagination, filtering, and search
 - ✅ Modular, scalable project structure
 - ✅ CORS support for frontend integration
 - ✅ `.env` support for environment configuration
@@ -54,27 +53,27 @@ A production-ready RESTful API for managing a bookstore, built with **FastAPI**,
 
 ### 1. Clone the Repo
 
-```bash
-git clone https://github.com/yourusername/bookstore-api.git
-cd bookstore-api
+    https://github.com/shubhankarchdas/FastApi.git
+    cd bookstore-api
 
 
-Create Virtual Environment
+### 2. Create Virtual Environment
 
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-
-
-Install Dependencies
-
-pip install -r requirements.txt
+    python -m venv venv
+    source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 
- Set Up Environment Variables
+### 3. Install Dependencies
+
+    pip install -r requirements.txt
+
+
+### 4. Set Up Environment Variables
 Create a .env file in the root with:
 
-MONGO_URI=mongodb://localhost:27000
-DB_NAME=bookstore_db
+    MONGO_URI=mongodb://localhost:27000
+    DB_NAME=bookstore_db
 
 ▶️ Run the App
-uvicorn app.main:app --reload
+
+    uvicorn app.main:app --reload
